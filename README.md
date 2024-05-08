@@ -1,7 +1,10 @@
 # CasoFinalDeLosFinales
 
+https://github.com/MarioGonzalo/CasoFinalDeLosFinales.git
+
 APELLIDOS Gonzalo Latorre  NOMBRE Mario  GRUPO Ingeniería informática   CALIFICACIÓN
 Estructuras de Datos   DNI 54210043D
+
 ## Ejercicio 1
 
 Se indicarán las preguntas y su única opción restante será la elegida.
