@@ -1,19 +1,34 @@
 package org.example;
 
+import java.time.LocalDate;
+
 public class Tweet {
     private String mensaje;
-    private UserAccount autor;
+    private UserAccount sender;
+    private LocalDate time;
 
-    public Tweet( UserAccount autor, String mensaje) {
-        this.mensaje = mensaje;
-        this.autor = autor;
+    public Tweet(UserAccount sender, String mensaje) {
+        if (mensaje.length() < 140) {
+            this.mensaje = mensaje;
+        } else {
+            System.out.println("Mensaje inválido, no puede superar los 140 caracteres");
+            this.mensaje = null;
+        }
+        this.sender = sender;
+        this.time = LocalDate.now();
     }
 
     public String getMensaje() {
         return mensaje;
     }
 
-    public UserAccount getAutor() {
-        return autor;
+    public UserAccount getSender() {
+        return sender;
     }
+
+    public LocalDate getTime() {
+        return time;
+    }
+
+
 }

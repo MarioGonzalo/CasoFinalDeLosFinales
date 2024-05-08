@@ -15,5 +15,12 @@ public class Main {
         System.out.println(user.getTuits());
         System.out.println(user2.getTimeline());
         System.out.println(user.toString());
+        Tweet t = new Tweet(user, "Hola");
+        DirectMessage dm = new DirectMessage(user, user2,"Hola");
+        System.out.println(t.getMensaje());
+        System.out.println(dm.getReceiver());
+        Retweet rt = new Retweet(user, t, "Hola");
+        System.out.println(rt.getOriginalTweet());
+        System.out.println(rt.getMensaje());
     }
 }
