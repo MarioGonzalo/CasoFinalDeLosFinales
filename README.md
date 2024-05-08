@@ -76,7 +76,7 @@ Se alcanza el final de la lista y se vuelve a empezar
 50 comparado con 84, ambos se quedarán en la posición [4] y [5] de la lista respectivamente [13 16 20 22 50 84 85 89]
 84 comparado con 85, ambos se quedarán en la posición [5] y [6] de la lista respectivamente [13 16 20 22 50 84 85 89]
 85 comparado con 89, ambos se quedarán en la posición [6] y [7] de la lista respectivamente [13 16 20 22 50 84 85 89]
-Se volverá a hacer este bucle y aal no haber cambios se considerará la lista como ordenada.
+Se volverá a hacer este bucle y al no haber cambios se considerará la lista como ordenada.
 
 
 ### 5) Dadas dos funciones y su número de operaciones: A = 1024 n B = 16 n^3 Calcular a partir de qué tamaño de entrada n A es más eficiente que B.
@@ -85,13 +85,17 @@ A partir del tamaño de entrada 8 A será más eficiente que B ya que con este v
 
 ## Ejercicio 3
 
-El código da un error ya que la recursividad lineal empleada disminuye b con el objetivo de que llegue a 0 y terminar el bucle, pero este al ser negativo nunca llegará a 0 creando un bucle infinito del que se acaba saliendo con un error. Esto se podrá solucionar o bien no permitiendo que se introduzcan números negativos o sumando en vez de restar cuando b se trate de un número negativo.
+El código da un error ya que la recursividad lineal no final empleada disminuye b con el objetivo de que llegue a 0 y terminar el bucle, pero este al ser negativo nunca llegará a 0 creando un bucle infinito del que se acaba saliendo con un error. Esto se podrá solucionar o bien no permitiendo que se introduzcan números negativos o sumando en vez de restar cuando b se trate de un número negativo.
 
-La recursividad, como se ha mencionado anteriormente, es lineal. La operación ejecutada en este código es la de elevar un número a otro, siendo "a" la base y "b" el exponente.
+La recursividad, como se ha mencionado anteriormente, es lineal no final. La operación ejecutada en este código es la de elevar un número a otro, siendo "a" la base y "b" el exponente.
 
 ## Ejercicio 4
 
+El código de este ejercicio se puede encontrar en la carpeta "CFFEjercicio4". En el readme se contestará a las preguntas:
 
+### ¿Qué tipo de recursividad se está empleando? ¿Qué complejidad computacional tiene el algoritmo?
+
+Se está empleando una recursividad lineal que tiene una complejidad computacional de O(n)
 
 
 
