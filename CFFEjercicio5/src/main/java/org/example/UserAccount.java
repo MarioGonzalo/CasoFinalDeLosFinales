@@ -101,4 +101,12 @@ public class UserAccount {
             u.timeline.add(t);
         }
     }
+
+    @Override
+    public String toString() {
+        return "UserAccount{" +
+                "alias='" + alias + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

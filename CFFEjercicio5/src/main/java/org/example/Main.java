@@ -8,6 +8,12 @@ public class Main {
         user.setAlias("pepe");
         System.out.println(user.getAlias());
         user.follow(user2);
+        user2.follow(user);
         System.out.println(user.getSiguiendo());
+        System.out.println(user2.getSeguidores());
+        user.tweet("Hola");
+        System.out.println(user.getTuits());
+        System.out.println(user2.getTimeline());
+        System.out.println(user.toString());
     }
 }
