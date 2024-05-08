@@ -83,6 +83,15 @@ Se volverá a hacer este bucle y aal no haber cambios se considerará la lista c
 
 A partir del tamaño de entrada 8 A será más eficiente que B ya que con este valor de n ambos serán iguales pero B disminuye la eficiencia más rápido.
 
+## Ejercicio 3
+
+El código da un error ya que la recursividad lineal empleada disminuye b con el objetivo de que llegue a 0 y terminar el bucle, pero este al ser negativo nunca llegará a 0 creando un bucle infinito del que se acaba saliendo con un error. Esto se podrá solucionar o bien no permitiendo que se introduzcan números negativos o sumando en vez de restar cuando b se trate de un número negativo.
+
+La recursividad, como se ha mencionado anteriormente, es lineal. La operación ejecutada en este código es la de elevar un número a otro, siendo "a" la base y "b" el exponente.
+
+## Ejercicio 4
+
+
 
 
 
