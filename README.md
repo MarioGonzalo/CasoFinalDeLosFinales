@@ -1,5 +1,7 @@
 # CasoFinalDeLosFinales
 
+APELLIDOS Gonzalo Latorre  NOMBRE Mario  GRUPO Ingeniería informática   CALIFICACIÓN
+Estructuras de Datos   DNI 54210043D
 ## Ejercicio 1
 
 Se indicarán las preguntas y su única opción restante será la elegida.
@@ -97,5 +99,14 @@ El código de este ejercicio se puede encontrar en la carpeta "CFFEjercicio4". E
 
 Se está empleando una recursividad lineal que tiene una complejidad computacional de O(n)
 
+## Ejericicio 5
 
+El código de este apartado se encuentra en la carpeta "CFFEjercicio5" aquí se responderán las preguntas planteadas en este ejercicio las cuales son:
 
+### ¿Deberá modificar los atributos timeline y tweets de la clase UserAccount (definida en el ejercicio 1) para que contenga elementos de la clase hija Retweet? Justifique su razonamiento y, si cree que hay que modificarlos, explique también cómo lo haría.
+
+No, estos atributos no deberán modificarse ya que al poder almacenar objetos de la clase Tweet puede hacer lo mismo con sus hijos.
+
+### ¿Deberá modificar el método tweet(Tweet tweet1) de la clase UserAccount (definida en el ejercicio 1) para que pueda enviar también objetos de tipo Retweet? Justifique su razonamiento y, si cree que hay que modificarlo, explique también cómo lo haría.
+
+Si, se tendrá que hacer un método para cada acción ya que son clases diferentes que poseen atributos distintos.
