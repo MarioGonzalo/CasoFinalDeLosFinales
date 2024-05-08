@@ -79,10 +79,26 @@ public class UserAccount {
         return seguidores;
     }
 
+    public List<Tweet> getTuits() {
+        return tuits;
+    }
+
+    public List<Tweet> getTimeline() {
+        return timeline;
+    }
+
     public void follow(UserAccount user) {
         if (user != this && !siguiendo.contains(user)) {
             siguiendo.add(user);
             user.seguidores.add(this);
+        }
+    }
+
+    public void tweet(String mensaje) {
+        Tweet t = new Tweet(this, mensaje);
+        tuits.add(t);
+        for (UserAccount u : seguidores) {
+            u.timeline.add(t);
         }
     }
 }
