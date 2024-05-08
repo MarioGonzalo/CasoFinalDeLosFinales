@@ -30,5 +30,12 @@ public class Tweet {
         return time;
     }
 
+    @Override
+    public String toString() {
+        return "mensaje= '" + mensaje + '\'' +
+                ", sender= " + sender +
+                ", time= " + time;
+    }
+
 
 }

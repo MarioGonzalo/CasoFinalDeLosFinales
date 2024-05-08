@@ -104,9 +104,7 @@ public class UserAccount {
 
     @Override
     public String toString() {
-        return "UserAccount{" +
-                "alias='" + alias + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return "alias= '" + alias + '\'' +
+                ", email= '" + email + '\'';
     }
 }

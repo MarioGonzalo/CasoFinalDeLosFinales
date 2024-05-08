@@ -19,4 +19,12 @@ public class Retweet extends Tweet{
         return originalTweet;
     }
 
+    @Override
+    public String toString() {
+        return "originalTweet= " + originalTweet +
+                ", retwitter= " + sender +
+                ", mensaje= '" + mensaje + '\'' +
+                ", time= " + time;
+    }
+
 }

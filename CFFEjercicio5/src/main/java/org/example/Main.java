@@ -22,5 +22,10 @@ public class Main {
         Retweet rt = new Retweet(user, t, "Hola");
         System.out.println(rt.getOriginalTweet());
         System.out.println(rt.getMensaje());
+        System.out.println(t.toString());
+        System.out.println(dm.toString());
+        System.out.println(rt.toString());
+        System.out.println("user.getTuits()");
+        System.out.println(user2.getTimeline());
     }
 }

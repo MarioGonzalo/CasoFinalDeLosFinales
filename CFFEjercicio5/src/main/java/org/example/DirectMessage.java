@@ -11,4 +11,12 @@ public class DirectMessage extends Tweet {
     public UserAccount getReceiver() {
         return receiver;
     }
+
+    @Override
+    public String toString() {
+        return "mensaje= '" + getMensaje() + '\'' +
+                ", sender= " + getSender() +
+                ", receiver= " + receiver +
+                ", time= " + getTime();
+    }
 }
