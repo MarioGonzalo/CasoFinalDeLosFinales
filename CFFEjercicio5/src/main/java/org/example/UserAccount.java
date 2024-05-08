@@ -70,4 +70,19 @@ public class UserAccount {
             System.out.println("Email inválido, debe contener un @");
         }
     }
+
+    public List<UserAccount> getSiguiendo() {
+        return siguiendo;
+    }
+
+    public List<UserAccount> getSeguidores() {
+        return seguidores;
+    }
+
+    public void follow(UserAccount user) {
+        if (user != this && !siguiendo.contains(user)) {
+            siguiendo.add(user);
+            user.seguidores.add(this);
+        }
+    }
 }
